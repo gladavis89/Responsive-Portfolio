@@ -122,6 +122,8 @@ h3, h2 {
 #main-container {
   padding-top: 130px;
   min-height: calc(100vh - 70px);
+  width:66%;
+  margin:20px;
 }
 
 .main-section {
@@ -214,4 +216,48 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+@media screen and (max-width:640px) {
+ 
+  .container { 
+    max-width:640px;
+    
+  }
+  #masthead {
+    position: static
+  }
+  nav{float: left; width: 100%; text-align: center;}
+  #logo {width: 100%}
+  #main-container {
+    clear: left;
+  }
+
+}
+@media screen and (max-width:768px) {
+ 
+  .container { 
+   
+    max-width:768px;
+    width:100%
+    
+  }
+  #main-container {
+    clear: left;
+  }
+}
+@media screen and (max-width:980) {
+  
+  .container {
+  
+    max-width:980px;
+    
+  }
+ 
+}
+
+@media screen and (min-width:768px){
+#main-container {
+  float: left;
+}
 }
